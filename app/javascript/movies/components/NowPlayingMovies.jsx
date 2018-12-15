@@ -27,7 +27,7 @@ class NowPlayingMovies extends React.Component {
 
   render () {
     return (
-      <div class='container'>
+      <div class='container pt-3'>
         <div class='row'>
             { this.state.latest.map(function(movie){
               return <NowPlaying data={movie}/>
