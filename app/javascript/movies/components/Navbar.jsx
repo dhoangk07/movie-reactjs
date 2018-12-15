@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-const MoviesNav = () => (
+const Navbar = () => (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">TheMovieDB</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,4 +16,4 @@ const MoviesNav = () => (
       </div>
     </nav>
 )
-export default MoviesNav
+export default Navbar
