@@ -17,7 +17,7 @@ class NowPlayingMovies extends React.Component {
       url: 'https://api.themoviedb.org/3/movie/now_playing?page=1&language=en-US&api_key=65863bf5229c0d57bcf2f3a29183ac0e',
     })
     .then(response =>{
-      this.setState({ latest: response.data.results  })
+      this.setState({ latest: response.data.results})
     })
   }
 
@@ -27,8 +27,8 @@ class NowPlayingMovies extends React.Component {
 
   render () {
     return (
-      <div class='container pt-3'>
-        <div class='row'>
+      <div className='container pt-3'>
+        <div className='row'>
             { this.state.latest.map(function(movie){
               return <NowPlaying data={movie}/>
             })}
