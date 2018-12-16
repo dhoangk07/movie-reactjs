@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import NowPlayingMovies from './NowPlayingMovies';
 import GenreMovies from './GenreMovies';
 import SpecificGenres from './SpecificGenres';
+import MovieSearch from './MovieSearch';
 
 const App = (props) => (
   <Router>
@@ -15,6 +16,7 @@ const App = (props) => (
         path="/genres/:id"
         render={props => <SpecificGenres {...props} key={props.match.params.id} />}
       />
+      <Route path='/search' component={MovieSearch} />
     </div>
   </Router>
 )

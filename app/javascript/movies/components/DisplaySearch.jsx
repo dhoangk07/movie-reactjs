@@ -1,6 +1,6 @@
 import React from 'react';
 
-class DisplayGenre extends React.Component {
+class DisplaySearch extends React.Component {
   render () {
     return(
       <div className='col-6 px-0'>
@@ -15,5 +15,5 @@ class DisplayGenre extends React.Component {
   }
 }
 
-export default DisplayGenre
+export default DisplaySearch
 
