@@ -5,6 +5,7 @@ import NowPlayingMovies from './NowPlayingMovies';
 import GenreMovies from './GenreMovies';
 import SpecificGenres from './SpecificGenres';
 import MovieSearch from './MovieSearch';
+import Footer from './Footer';
 
 const App = (props) => (
   <Router>
@@ -16,8 +17,11 @@ const App = (props) => (
         path="/genres/:id"
         render={props => <SpecificGenres {...props} key={props.match.params.id} />}
       />
-      <Route path='/search' component={MovieSearch} />
+      <Route path='/#/search' component={MovieSearch} />
+      <Footer/>
     </div>
   </Router>
+
 )
 export default App
+
